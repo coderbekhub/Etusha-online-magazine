@@ -43,7 +43,7 @@ export default function Home() {
                 </div>
 
 
-                <div class="">
+                <div>
                   <button className="btn bg-success text-warning" type="submit">Отправить</button>
                 </div>
             </form>
