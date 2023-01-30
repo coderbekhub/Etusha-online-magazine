@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -23,8 +27,122 @@ Link {
 
 // NAVIGATION STYLE
 
+.nav_bar {
+  // width: 100%;
+  position: relative;
+  background-color: #d10683;
+}
+
 .navList {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .nav_link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: aliceblue;
+  }
+}
+
+.navbarBrand {
+  display: none;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.nav_lang {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 5px;
+  }
+}
+
+.btn-link img {
+  color: aliceblue;
+}
+
+// NAVOGATION MEDIA 
+
+@media (max-width: 830px) {
+  .navbarBrand {
+    display: inline-block;
+  }
+  
+  .navbar-toggler {
+    display: inline-block;
+  }
+  
+  #navBar {
+    display: none;
+  }
+
+  .navBar_Media {
+    background-color: #d10683;
+    position: relative;
+  }
+
+  .media_list {
+    background-color: #d10683;
+  }
+
+  .mediaTitle {
+    color: aliceblue;
+  }
+
+  .navbar-nav {
+    .mediaLink {
+      color: aliceblue;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .mediaSearch {
+    border: aliceblue 2px solid;
+  }
+
+  .mediaDropLink {
+    color: #d10683;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+}
+
+// HERO SECTION
+.heroVideo {
+  width: 100%;
+  position: relative;
+  bottom: 16px;
+  object-fit: coverf;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 300px;
+
+  .hero_title {
+    width: 567px;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 108px;
+    text-transform: capitalize;
+    color: aliceblue;
+    text-shadow: 0px 2.38123px 7.1437px rgba(0, 0, 0, 0.25);
+  }
+
+  .hero_title {
+    margin-right: 250px;
+    margin-left: 100px;
+  }
 }
