@@ -21,7 +21,7 @@ export default function Home() {
                   <input type="text" className="form-control is-valid" id="validationServer01" required placeholder='Введите ваше имя' />
                 </div>
 
-                <div className="">
+                <div>
                   <input type="number" className="form-control is-valid" id="validationServer01" required placeholder='Ваш номер телефона' />
                 </div>
                 
