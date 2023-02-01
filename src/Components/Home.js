@@ -20,11 +20,9 @@ export default function Home() {
                 <div className="">
                   <input type="text" className="form-control is-valid" id="validationServer01" required placeholder='Введите ваше имя' />
                 </div>
-
                 <div>
                   <input type="number" className="form-control is-valid" id="validationServer01" required placeholder='Ваш номер телефона' />
                 </div>
-                
                 <div className="mb-3">
                   <select className="form-select" required aria-label="select example">
                     <option value="">Выберите вид услуги</option>
@@ -32,14 +30,9 @@ export default function Home() {
                     <option value="2">Парикмахер</option>
                     <option value="3">Химическая Очистка</option>
                   </select>
-                  <div className="invalid-feedback">Пример недопустимого отзыва о выборе</div>
                 </div>
-
                 <div className="mb-3">
-                  <textarea className="form-control" id="validationTextarea" placeholder="Requifred example textarea" required></textarea>
-                  <div className="invalid-feedback">
-                    Пожалуйста, введите сообщение в текстовую область.
-                  </div>
+                  <textarea className="form-control" id="validationTextarea" placeholder="Оставьте свое сообщение" required></textarea>
                 </div>
                 <div>
                   <button className="btn bg-success heroFormSubmit" type="submit">Отправить</button>

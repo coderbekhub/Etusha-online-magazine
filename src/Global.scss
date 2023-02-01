@@ -121,7 +121,7 @@ Link {
   width: 100%;
   position: relative;
   bottom: 16px;
-  object-fit: coverf;
+  object-fit: cover;
 }
 
 .heroContent {
@@ -170,6 +170,13 @@ Link {
       border-radius: 6px;
       display: block;
       margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #767676;
+    }
+    select {
+      color: #767676;
     }
     .heroFormSubmit {
       width: 100%;
@@ -194,13 +201,274 @@ Link {
 
 @media (max-width: 1205px) {
   .heroContent {
+    position: absolute;
+    top: 250px;
     .hero_title {
-      width: 567px;
+      width: 500px;
       font-weight: 400;
-      font-size: 80px;
-      line-height: 108px;
-      margin-right: 100px;
+      font-size: 50px;
+      line-height: 70px;
+      margin-right: 60px;
       margin-left: 50px;
     }
   }
+
+  .heroInfo {
+    width: 370px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fff;
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+    padding: 32px 32px 32px 32px;
+    .heroForm {
+      input {
+        width: 306px;
+        height: 45px;
+      }
+      select {
+        width: 306px;
+      }
+      textarea {
+        width: 306px;
+      }
+      .heroFormSubmit {
+        width: 100%;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: aliceblue;
+      }
+    }
+  }
+}
+
+@media (max-width: 1015px) {
+  .heroContent {
+    position: absolute;
+    top: 220px;
+    .hero_title {
+      width: 500px;
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .heroContent {
+    position: absolute;
+    top: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .hero_title {
+      margin-right: -50px;
+      margin-left: 50px;
+    }
+  }
+
+  .heroInfo {
+    .heroInfo_title {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 10px;
+      margin-bottom: 22px;
+      color: #000000b2;
+    }
+  }
+
+  .heroInfo {
+    width: 330px;
+    height: 420px;
+    padding: 32px 32px 32px 32px;
+    .heroForm {
+      input {
+        width: 270px;
+        height: 45px;
+        margin-bottom: 17px;
+      }
+      select {
+        width: 270px;
+        margin-bottom: 17px;
+      }
+      textarea {
+        width: 270px;
+        margin-bottom: 17px;
+      }
+      .heroFormSubmit {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .heroContent {
+    position: absolute;
+    top: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .hero_title {
+      margin-right: -80px;
+      margin-left: 50px;
+    }
+  }
+
+  .heroInfo {
+    width: 320px;
+    height: 370px;
+    padding: 22px;
+    .heroForm {
+      input {
+        width: 270px;
+        height: 45px;
+        margin-bottom: 17px;
+      }
+      select {
+        width: 270px;
+        margin-bottom: 17px;
+      }
+      textarea {
+        width: 270px;
+        margin-bottom: 17px;
+      }
+      .heroFormSubmit {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .heroContent {
+    width: auto;
+    position: absolute;
+    top: 120px;
+  
+    .hero_title {
+      width: 300px;
+      padding: 20px 0;
+      margin-right: 0px;
+      margin-left: 0;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .heroInfo {
+      text-align: center;
+      margin: 0 auto;
+      width: 320px;
+      height: 300px;
+      padding: 20px;
+      .heroForm {
+        input {
+          width: 270px;
+          height: 35px;
+          margin-bottom: 13px;
+        }
+        select {
+          width: 270px;
+          height: 35px;
+          margin-bottom: 13px;
+        }
+        textarea {
+          width: 270px;
+          height: 40px;
+          margin-bottom: 13px;
+        }
+        .heroFormSubmit {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .heroContent {
+    top: 90px;
+    .heroInfo {
+      width: 100%;
+      height: 300px;
+      padding: 20px;
+      .heroForm {
+        input {
+          width: 100%;
+          height: 35px;
+          margin-bottom: 13px;
+        }
+        select {
+          width: 100%;
+          height: 35px;
+          margin-bottom: 13px;
+        }
+        textarea {
+          width: 100%;
+          height: 40px;
+          margin-bottom: 13px;
+        }
+        .heroFormSubmit {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  .heroContent {
+    top: 90px;
+    .heroInfo_title {
+      font-size: 20px;
+      line-height: 0px;
+      margin-bottom: 20px;
+    }
+    .heroInfo {
+      width: 100%;
+      height: 250px;
+      padding: 20px;
+      .heroForm {
+        input {
+          width: 100%;
+          height: 28px;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        select {
+          width: 100%;
+          height: 30px;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        textarea {
+          width: 100%;
+          height: 28px;
+          font-size: 13px;
+          margin-bottom: 10px;
+        }
+        .heroFormSubmit {
+          width: 100%;
+          height: 30px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .heroContent {
+    display: none;
+    .heroInfo {
+      display: none;
+    }
+  }
+}
+
+#heroInfo {
+  margin: 0 auto;
+  position: relative;
+  top: -60px;
 }
