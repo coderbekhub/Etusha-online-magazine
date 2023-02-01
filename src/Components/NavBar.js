@@ -3,6 +3,7 @@ import Brand from '../img/brand-removebg.png'
 import Globus from '../img/globus.png'
 import Uz from '../img/uz.png'
 import Ru from '../img/ru.png'
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   return (
@@ -15,10 +16,10 @@ export default function NavBar() {
                 <img src={Brand} alt="..." width={130} height={130} />
               </a>
             </li>
-            <li><a href="#" className="nav_link">Главный</a></li>
-            <li><a href="#" className="nav_link">О нас</a></li>
-            <li><a href="#" className="nav_link">Наши проекты</a></li>
-            <li><a href="#" className="nav_link">Контакты</a></li>
+            <li><Link to="/" className="nav_link">Главный</Link></li>
+            <li><Link to="/ourAbout" className="nav_link">О нас</Link></li>
+            <li><Link to="/ourProjects" className="nav_link">Наши проекты</Link></li>
+            <li><Link to="/Contact" className="nav_link">Контакты</Link></li>
             <div className="dropdown">
             <button className="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <img src={Globus} alt="..." width={20} height={20} />
@@ -57,25 +58,25 @@ export default function NavBar() {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <a className="nav-link mediaLink" aria-current="page" href="#">Главный</a>
+                  <Link className="nav-link mediaLink" aria-current="page" to='/'>Главный</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link mediaLink" href="#">О нас</a>
+                  <Link className="nav-link mediaLink" to="/ourAbout">О нас</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link mediaLink" href="#">Наши проекты</a>
+                  <Link className="nav-link mediaLink" to="/ourProjects">Наши проекты</Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link mediaLink" href="#">Контакты</a>
+                  <Link className="nav-link mediaLink" to="/Contact">Контакты</Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link mediaLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Сервисы
                   </a>
                   <ul className="dropdown-menu">
-                    <li><a className="dropdown-item mediaDropLink" href="#">Шитье</a></li>
-                    <li><a className="dropdown-item mediaDropLink" href="#">Парикмахер</a></li>
-                    <li><a className="dropdown-item mediaDropLink" href="#">Химическая Очистка</a></li>
+                    <li><Link className="dropdown-item mediaDropLink" to="/sewing">Шитье</Link></li>
+                    <li><Link className="dropdown-item mediaDropLink" to="/hairdresser">Парикмахер</Link></li>
+                    <li><Link className="dropdown-item mediaDropLink" to="/chemicalCleaning">Химическая Очистка</Link></li>
                   </ul>
                 </li>
               </ul>
@@ -112,7 +113,6 @@ export default function NavBar() {
           </div>
         </div>
       </nav>
-
     </>
   )
 }

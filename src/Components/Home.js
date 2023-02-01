@@ -1,11 +1,11 @@
 import React from 'react'
-import NavBar from './NavBar'
+// import NavBar from './NavBar'
 import HeroBgVideo from '../img/heroBgVideo.mp4'
 
 export default function Home() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
 
       <section id='heroSection'>
         <div>
