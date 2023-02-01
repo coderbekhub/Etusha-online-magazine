@@ -1,6 +1,6 @@
 import React from 'react'
 // import NavBar from './NavBar'
-import HeroBgVideo from '../img/heroBgVideo.mp4'
+import HeroBgVd from '../img/HeroBgVd.mp4'
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
 
       <section id='heroSection'>
         <div>
-          <video className='heroVideo' src={HeroBgVideo} autoPlay loop muted />
+          <video className='heroVideo' src={HeroBgVd} autoPlay loop muted />
         </div>
         <div className="container">
           <div className='heroContent'>
