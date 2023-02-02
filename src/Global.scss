@@ -472,3 +472,39 @@ Link {
   position: relative;
   top: -30px;
 }
+
+// WHY US STYLE
+
+.whyUsTitle_content {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  img {
+    margin-bottom: 10px;  
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    color: #000;
+  }
+}
+
+.whyUs_content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 0;
+  .whyUs_card {
+    width: 280px;
+    height: 298px;
+    background: #F8F6F4;
+    border-radius: 18px;
+    padding: 20px 13px 24px 13px;
+    img {
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,12 +1,15 @@
 import React from 'react'
-// import NavBar from './NavBar'
 import HeroBgVd from '../img/HeroBgVd.mp4'
+import PatternIcon from '../img/pattern_icon.svg'
+import ConfirmationIcon from '../img/confirmation_icon.svg'
+import SxemaIcon from '../img/sxema_icon.svg'
+import PlanIcon from '../img/plan_icon.svg'
+import StarIcon from '../img/star_icon.svg'
 
 export default function Home() {
   return (
     <>
-      {/* <NavBar /> */}
-
+      {/* HERO SECTION START */}
       <section id='heroSection'>
         <div>
           <video className='heroVideo' src={HeroBgVd} autoPlay loop muted />
@@ -40,6 +43,38 @@ export default function Home() {
               </form>
             </div>
           </div>    
+        </div>
+      </section> 
+      {/* HERO SECTION END */}
+
+      <section id='whyUs_section'>
+        <div className="container">
+          <div className='whyUsTitle_content'>
+            <img src={PatternIcon} alt="..." />
+            <h2>Почему мы?</h2>
+          </div>
+          <div className='whyUs_content'>
+            <div className='whyUs_card'>
+              <img src={ConfirmationIcon} alt="..." />
+              <h3>Квалифицированные специалисты</h3>
+              <p>Принято считать, что специалисты стоят дорого, но если посчитать все издержки, возникшие от горе-мастеров, то в итоге выходит дешевле</p>
+            </div>
+            <div className='whyUs_card'>
+              <img src={SxemaIcon} alt="..." />
+              <h3>Квалифицированные специалисты</h3>
+              <p>Принято считать, что специалисты стоят дорого, но если посчитать все издержки, возникшие от горе-мастеров, то в итоге выходит дешевле</p>
+            </div>
+            <div className='whyUs_card'>
+              <img src={PlanIcon} alt="..." />
+              <h3>Квалифицированные специалисты</h3>
+              <p>Принято считать, что специалисты стоят дорого, но если посчитать все издержки, возникшие от горе-мастеров, то в итоге выходит дешевле</p>
+            </div>
+            <div className='whyUs_card'>
+              <img src={StarIcon} alt="..." />
+              <h3>Квалифицированные специалисты</h3>
+              <p>Принято считать, что специалисты стоят дорого, но если посчитать все издержки, возникшие от горе-мастеров, то в итоге выходит дешевле</p>
+            </div>
+          </div>
         </div>
       </section>
     </>
