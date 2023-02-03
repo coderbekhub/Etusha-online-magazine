@@ -1,4 +1,11 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/lazy';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Lazy, Pagination, Navigation } from 'swiper';
+import "../styles.css";
 import HeroBgVd from '../img/HeroBgVd.mp4'
 import PatternIcon from '../img/pattern_icon.svg'
 import ConfirmationIcon from '../img/confirmation_icon.svg'
@@ -6,7 +13,14 @@ import SxemaIcon from '../img/sxema_icon.svg'
 import PlanIcon from '../img/plan_icon.svg'
 import StarIcon from '../img/star_icon.svg'
 import StandardsImg from '../img/standardsImg.png'
-import TestImg from '../img/test.svg'
+// import ProjectImg1 from '../img/project1.png'
+// import ProjectImg2 from '../img/project2.png'
+// import ProjectImg3 from '../img/project3.png'
+// import ProjectImg4 from '../img/project4.png'
+// import ProjectImg5 from '../img/project5.png'
+// import ProjectImg6 from '../img/project6.png'
+// import ProjectImg7 from '../img/project7.png'
+// import ProjectImg8 from '../img/project8.png'
 
 export default function Home() {
   return (
@@ -109,13 +123,84 @@ export default function Home() {
       {/* WHY US SECTION END */}
 
       <section id='ourProjects'>
-        <div class="carousel-item">
-          <img src={TestImg} alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>ksdklashfklahsfkl</h5>
-            <p>...</p>
-          </div>
-        </div>
+      <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+        }}
+        lazy={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Lazy, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-1.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-2.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-3.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-4.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-5.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-6.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-7.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-8.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src="https://swiperjs.com/demos/images/nature-9.jpg"
+            loading="lazy"
+          />
+          <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        </SwiperSlide>
+      </Swiper>
+
       </section>
     </>
   )
