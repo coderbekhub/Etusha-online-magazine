@@ -65,26 +65,26 @@ export default function Home() {
       <section id='whyUs_section'>
         <div className="container">
           <div className='whyUsTitle_content'>
-            <img src={PatternIcon} alt="..." />
-            <h2>Почему мы?</h2>
+            <img data-aos="fade-up" src={PatternIcon} alt="..." />
+            <h2 data-aos="fade-up">Почему мы?</h2>
           </div>
           <div className='whyUs_content'>
-            <div className='whyUs_card'>
+            <div data-aos="fade-up" className='whyUs_card'>
               <img src={ConfirmationIcon} alt="..." />
               <h3>Квалифицированные специалисты</h3>
               <p>Принято считать, что специалисты стоят дорого, но если посчитать все издержки, возникшие от горе-мастеров, то в итоге выходит дешевле</p>
             </div>
-            <div className='whyUs_card'>
+            <div data-aos="fade-up" className='whyUs_card'>
               <img src={SxemaIcon} alt="..." />
               <h3>Точный расчет сметы</h3>
               <p>Профессиональный и точный расчет сметы работ позволит сократить общую сумму расходов на ремонт, в некоторых случаях на 40-60%</p>
             </div>
-            <div className='whyUs_card'>
+            <div data-aos="fade-up" className='whyUs_card'>
               <img src={PlanIcon} alt="..." />
               <h3>Составляем план этапов работы</h3>
               <p>Это поставляет сократить количество времени, которое заказчик тратит на согласование. Мы снимаем эту головную боль</p>
             </div>
-            <div className='whyUs_card'>
+            <div data-aos="fade-up" className='whyUs_card'>
               <img src={StarIcon} alt="..." />
               <h3>Договор и гарантии </h3>
               <p>Договор дисциплинирует и дает гарантин обеим сторонам мы несем полную отвественность и даем гарантии качественного исполнения в срок </p>
@@ -92,10 +92,10 @@ export default function Home() {
           </div>
 
           <div className='standardsContent d-flex justify-content-center align-items-center'>
-            <img src={StandardsImg} alt="..." />
+            <img data-aos="fade-right" src={StandardsImg} alt="..." />
             <div className='standardsInfo'>
-              <h2>Установливаем высокие стандарты</h2>
-              <div className='standardsInfoContent d-flex'>
+              <h2 data-aos="fade-up">Установливаем высокие стандарты</h2>
+              <div data-aos="fade-left" className='standardsInfoContent d-flex'>
                 <div className='standardsInfoSec'>
                   <span>15</span>
                   <h3>Лет опытa в отрасли строительства</h3>
@@ -105,7 +105,7 @@ export default function Home() {
                   <h3>года Гарантия на ремонтые услуги</h3>
                 </div>
               </div>
-              <div className='standardsInfoContent d-flex'>
+              <div data-aos="fade-left" className='standardsInfoContent d-flex'>
                 <div className='standardsInfoSec'>
                   <span>20</span>
                   <h3>Опытных экспертов</h3>
@@ -123,6 +123,7 @@ export default function Home() {
 
       <section id='ourProjects'>
       <Swiper
+      data-aos="fade-left"
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
@@ -166,7 +167,6 @@ export default function Home() {
           <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
         </SwiperSlide>
       </Swiper>
-
       </section>
     </>
   )
