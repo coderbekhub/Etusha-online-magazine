@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import "../styles.css";
 import HeroBgVd from '../img/HeroBgVd.mp4'
 import PatternIcon from '../img/pattern_icon.svg'
@@ -16,14 +15,8 @@ import StandardsImg from '../img/standardsImg.png'
 // import ProjectImg6 from '../img/project6.png'
 // import ProjectImg7 from '../img/project7.png'
 // import ProjectImg8 from '../img/project8.png'
-import { FaQuoteRight } from "@react-icons/all-files/fa/FaQuoteRight";
-import { FiChevronRight } from "@react-icons/all-files/fi/FiChevronRight";
-import { FiChevronLeft } from "@react-icons/all-files/fi/FiChevronLeft";
 
 export default function Home() {
-  const [ people, setPeople ] = useState()
-  // data
-  const [ index, setIndex ] = useState(0)   
   return (
     <>
       {/* HERO SECTION START */}
@@ -121,7 +114,6 @@ export default function Home() {
           </div>
       </section>
       {/* WHY US SECTION END */}
-
       <section id='ourProjects'>
         <div className="container">
           <div className='whyUsTitle_content'>
@@ -189,32 +181,6 @@ export default function Home() {
 
       <section id="ourTeam"> 
         <div className="container">
-          {/* <div className="title">
-            <h2>
-              <span>/</span>reviews
-            </h2>
-          </div>
-          <div className="sectionCenter">
-            { people.map((person, personIndex) => {
-              const {id, image, name, title, quote} = person
-
-              return (
-                <article>
-                  <img className="personImg" src={image} alt="..." />
-                  <h4> {name} </h4>
-                  <p className="title">{title}</p>
-                  <p className="text">{quote}</p>
-                  <FaQuoteRight/>
-                </article>
-              )
-            })}
-            <button className="prev">
-              <FiChevronLeft />
-            </button>
-            <button className="next">
-              <FiChevronRight />
-            </button>
-          </div> */}
         </div>
       </section>
     </>
