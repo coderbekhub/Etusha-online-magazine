@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import { EffectCards } from "swiper";
 import "../styles.css";
 import HeroBgVd from '../img/HeroBgVd.mp4'
 import PatternIcon from '../img/pattern_icon.svg'
@@ -7,7 +11,7 @@ import SxemaIcon from '../img/sxema_icon.svg'
 import PlanIcon from '../img/plan_icon.svg'
 import StarIcon from '../img/star_icon.svg'
 import StandardsImg from '../img/standardsImg.png'
-// import ProjectImg1 from '../img/project1.png'
+import Team1 from '../img/team1.png'
 // import ProjectImg2 from '../img/project2.png'
 // import ProjectImg3 from '../img/project3.png'
 // import ProjectImg4 from '../img/project4.png'
@@ -90,7 +94,7 @@ export default function Home() {
             <img data-aos="fade-right" src={StandardsImg} alt="..." />
             <div className='standardsInfo'>
               <h2 data-aos="fade-up">Установливаем высокие стандарты</h2>
-              <div data-aos="fade-left" className='standardsInfoContent d-flex'>
+              <div data-aos="fade-up" className='standardsInfoContent d-flex'>
                 <div className='standardsInfoSec'>
                   <span>15</span>
                   <h3>Лет опытa в отрасли строительства</h3>
@@ -100,7 +104,7 @@ export default function Home() {
                   <h3>года Гарантия на ремонтые услуги</h3>
                 </div>
               </div>
-              <div data-aos="fade-left" className='standardsInfoContent d-flex'>
+              <div data-aos="fade-up" className='standardsInfoContent d-flex'>
                 <div className='standardsInfoSec'>
                   <span>20</span>
                   <h3>Опытных экспертов</h3>
@@ -120,12 +124,12 @@ export default function Home() {
               <img data-aos="fade-up" src={PatternIcon} alt="..." />
               <h2 data-aos="fade-up">Наши проекты</h2>
           </div>
-          <div data-aos="fade-up" id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark carouselContent" data-mdb-ride="carousel">
-            <div class="carousel-indicators">
+          <div data-aos="fade-up" id="carouselDarkVariant" className="carousel slide carousel-fade carousel-dark carouselContent" data-mdb-ride="carousel">
+            <div className="carousel-indicators">
               <button
                 data-mdb-target="#carouselDarkVariant"
                 data-mdb-slide-to="0"
-                class="active"
+                className="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
@@ -141,38 +145,38 @@ export default function Home() {
               ></button>
             </div>
 
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp" class="d-block w-100" alt="Motorbike Smoke"/>
-                <div class="carousel-caption d-none d-md-block">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp" className="d-block w-100" alt="Motorbike Smoke"/>
+                <div className="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
               </div>
 
-              <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp" class="d-block w-100" alt="Mountaintop"/>
-                <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-item">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp" className="d-block w-100" alt="Mountaintop"/>
+                <div className="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>
 
-              <div class="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp" class="d-block w-100" alt="Woman Reading a Book"/>
-                <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-item">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp" className="d-block w-100" alt="Woman Reading a Book"/>
+                <div className="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+            <button className="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+            <button className="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>
@@ -181,6 +185,119 @@ export default function Home() {
 
       <section id="ourTeam"> 
         <div className="container">
+          <div className='whyUsTitle_content ourTeamTitle'>
+            <img data-aos="fade-up" src={PatternIcon} alt="..." />
+            <h2 data-aos="fade-up">Наша Команда</h2>
+          </div>
+          <div data-aos="fade-up" className="carousel_content">
+            <Swiper
+              effect={"cards"}
+              grabCursor={true}
+              modules={[EffectCards]}
+              className="mySwiper">
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+      {/* OUR TEAM END */}
+
+      <section id="faq">
+        <div className="container">
+          <div className='whyUsTitle_content ourTeamTitle'>
+            <img data-aos="fade-up" src={PatternIcon} alt="..." />
+            <h2 data-aos="fade-up">Частые Вопросы</h2>
+          </div>
+          <div data-aos="fade-up"  className="accordion accordion-flush" id="accordionFlushExample">
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="flush-headingOne">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Сколько стоит дизайн проекта?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="flush-headingTwo">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Когда лучше заказать проект? 
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="flush-headingThree">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Можно делать ремонт параллельно с разработкой дизайн-проекта?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="flush-headingThree">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  Я не представляю какой стиль хочу получить, как быть в таком случае?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="flush-headingFive">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                  Сколько правок я могу внести?
+                </button>
+              </h2>
+              <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="flush-headingSix">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                  Из чего состоит дизайн-проект? В каком виде я его получу?
+                </button>
+              </h2>
+              <div id="flush-collapseSix" className="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="flush-headingSeven">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                  Рабочие чертежи входят в стоимость дизайн-проекта?
+                </button>
+              </h2>
+              <div id="flush-collapseSeven" className="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> className. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="flush-headingeight">
+                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
+                  Сколько по времени вы делаете дизайн-проект?
+                </button>
+              </h2>
+              <div id="flush-collapseeight" className="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">В среднем, разработка дизайн-проекта для квартиры занимает 1 - 1.5 месяца, а для коммерческого объекта требуется 2-3 месяца. Все в зависимости от квадратуры объекта.</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
