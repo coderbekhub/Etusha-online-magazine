@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import "../styles.css";
 import HeroBgVd from '../img/HeroBgVd.mp4'
 import PatternIcon from '../img/pattern_icon.svg'
@@ -15,18 +16,14 @@ import StandardsImg from '../img/standardsImg.png'
 // import ProjectImg6 from '../img/project6.png'
 // import ProjectImg7 from '../img/project7.png'
 // import ProjectImg8 from '../img/project8.png'
-import {
-  MDBCarousel,
-  MDBCarouselInner,
-  MDBCarouselItem,
-  MDBCol,
-  MDBIcon,
-  MDBTypography,
-  MDBContainer,
-  MDBRow,
-} from "mdb-react-ui-kit";
+import { FaQuoteRight } from "@react-icons/all-files/fa/FaQuoteRight";
+import { FiChevronRight } from "@react-icons/all-files/fi/FiChevronRight";
+import { FiChevronLeft } from "@react-icons/all-files/fi/FiChevronLeft";
 
 export default function Home() {
+  const [ people, setPeople ] = useState()
+  // data
+  const [ index, setIndex ] = useState(0)   
   return (
     <>
       {/* HERO SECTION START */}
@@ -95,8 +92,8 @@ export default function Home() {
               <p>Договор дисциплинирует и дает гарантин обеим сторонам мы несем полную отвественность и даем гарантии качественного исполнения в срок </p>
             </div>
           </div>
-
-          <div className='standardsContent d-flex justify-content-center align-items-center'>
+        </div>
+        <div className='standardsContent d-flex justify-content-center align-items-center'>
             <img data-aos="fade-right" src={StandardsImg} alt="..." />
             <div className='standardsInfo'>
               <h2 data-aos="fade-up">Установливаем высокие стандарты</h2>
@@ -122,7 +119,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
       </section>
       {/* WHY US SECTION END */}
 
@@ -188,11 +184,37 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </section>``
+      </section>
       {/* OUR PROJECTS SECTION END */}
 
       <section id="ourTeam"> 
         <div className="container">
+          {/* <div className="title">
+            <h2>
+              <span>/</span>reviews
+            </h2>
+          </div>
+          <div className="sectionCenter">
+            { people.map((person, personIndex) => {
+              const {id, image, name, title, quote} = person
+
+              return (
+                <article>
+                  <img className="personImg" src={image} alt="..." />
+                  <h4> {name} </h4>
+                  <p className="title">{title}</p>
+                  <p className="text">{quote}</p>
+                  <FaQuoteRight/>
+                </article>
+              )
+            })}
+            <button className="prev">
+              <FiChevronLeft />
+            </button>
+            <button className="next">
+              <FiChevronRight />
+            </button>
+          </div> */}
         </div>
       </section>
     </>
