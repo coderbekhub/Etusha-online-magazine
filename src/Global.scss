@@ -1044,12 +1044,15 @@ Link {
   .socialList li {
     margin-right: 19px;
   }
-
-  
 }
 
 .footerNav {
+  display: flex;
+  flex-wrap: wrap;
   .footerList {
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
     h2 {
       font-weight: 500;
       font-size: 22px;
@@ -1065,6 +1068,20 @@ Link {
       color: #f7e4d1;
       margin-bottom: 20px;
       display: block;
+    }
+  }
+}
+
+@media (max-width: 526px) {
+  .footerNav {
+    .footerBrand {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    .footerList {
+      text-align: left;
     }
   }
 }
