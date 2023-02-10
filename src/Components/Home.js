@@ -210,7 +210,7 @@ export default function Home() {
       </section>
       {/* OUR TEAM END */}
 
-      <section id="faq">
+      <section id="faq ourTeam">
         <div className="container">
           <div className='whyUsTitle_content ourTeamTitle'>
             <img data-aos="fade-up" src={PatternIcon} alt="..." />
