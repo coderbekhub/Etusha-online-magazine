@@ -398,6 +398,7 @@ export default function Home() {
               <li><a data-aos="fade-up" href="#">Ташкент, Лайлитугон 1/6, Чорсу ж/м</a></li>
             </ul>
           </nav>
+          <h2 className="copyright">Copyright © 2023 Etusha. All rights reserved.</h2>
         </div>
       </section>
     </footer>
