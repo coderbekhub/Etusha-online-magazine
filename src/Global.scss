@@ -1023,3 +1023,48 @@ Link {
 }
 
 // CONTACT STYLE END
+
+
+#footerSection {
+  background: #fe6ec7;
+  padding: 60px 80px 24px 80px;
+}
+
+.footerBrand {
+  img {
+    width: 148px;
+    height: 148px;
+  }
+
+  .socialList img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .socialList li {
+    margin-right: 19px;
+  }
+
+  
+}
+
+.footerNav {
+  .footerList {
+    h2 {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      color: #F8F6F4;
+      margin-bottom: 24px;
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      color: #f7e4d1;
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+}
