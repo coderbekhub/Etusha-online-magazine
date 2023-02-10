@@ -353,9 +353,9 @@ export default function Home() {
       </section>
       {/* CONTACT END */}
     </main>
-
+    {/* MAIN */}
     <footer id="footer">
-      
+
     </footer>
     </>
   )
