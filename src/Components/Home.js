@@ -24,6 +24,7 @@ import contactPhone from '../img/contactPhone.png'
 export default function Home() {
   return (
     <>
+    <main>
       {/* HERO SECTION START */}
       <section id='heroSection'>
         <div>
@@ -42,7 +43,7 @@ export default function Home() {
                   <input type="number" className="form-control is-valid" id="validationServer01" required placeholder='Ваш номер телефона' />
                 </div>
                 <div className="mb-3">
-                  <select className="form-select" required aria-label="select example">
+                  <select className="form-select" required aria-h2="select example">
                     <option value="">Выберите вид услуги</option>
                     <option value="1">Шитье</option>
                     <option value="2">Парикмахер</option>
@@ -131,25 +132,25 @@ export default function Home() {
                 data-mdb-slide-to="0"
                 className="active"
                 aria-current="true"
-                aria-label="Slide 1"
-              ></button>
+                aria-h2="Slide 1"
+                ></button>
               <button
                 data-mdb-target="#carouselDarkVariant"
                 data-mdb-slide-to="1"
-                aria-label="Slide 1"
-              ></button>
+                aria-h2="Slide 1"
+                ></button>
               <button
                 data-mdb-target="#carouselDarkVariant"
                 data-mdb-slide-to="2"
-                aria-label="Slide 1"
-              ></button>
+                aria-h2="Slide 1"
+                ></button>
             </div>
 
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp" className="d-block w-100" alt="Motorbike Smoke"/>
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
+                  <h5>First slide h2</h5>
                   <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
               </div>
@@ -157,7 +158,7 @@ export default function Home() {
               <div className="carousel-item">
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp" className="d-block w-100" alt="Mountaintop"/>
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
+                  <h5>Second slide h2</h5>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
               </div>
@@ -165,7 +166,7 @@ export default function Home() {
               <div className="carousel-item">
                 <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp" className="d-block w-100" alt="Woman Reading a Book"/>
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
+                  <h5>Third slide h2</h5>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
               </div>
@@ -304,33 +305,58 @@ export default function Home() {
           <div className='whyUsTitle_content contact'>
             <img data-aos="fade-up" src={PatternIcon} alt="..." />
             <h2 data-aos="fade-up">Частые Вопросы</h2>
-            <p>Мы всегда рады ответить на все ваши вопросы, для получения более подробной информации, просто свяжитесь с нами по ниже указанным данным.</p>
+            <p data-aos="fade-up">Мы всегда рады ответить на все ваши вопросы, для получения более подробной информации, просто свяжитесь с нами по ниже указанным данным.</p>
           </div>
 
           <div className="contactContent d-flex justify-content-between align-items-center">
             <div className="contactInfo">
-              <div className="contactInfoContent">
+              <div data-aos="fade-up" className="contactInfoContent">
                 <h3>ТЕЛЕФОН</h3>
                 <span>+998 99 663 7000</span>
               </div>
-              <div className="contactInfoContent">
+              <div data-aos="fade-up" className="contactInfoContent">
                 <h3>АДРЕС</h3>
                 <span>Лайлитугон, 1/6  Ташкент, Чорсу ж/м</span>
               </div>
-              <div className="contactInfoContent">
+              <div data-aos="fade-up" className="contactInfoContent">
                 <h3>EMAIL</h3>
                 <span>nafisinterlux@gmail.com</span>
               </div>
-              <div className="contactInfoContent">
+              <div data-aos="fade-up" className="contactInfoContent">
                 <h3>SOCIAL MEDIA</h3>
                 <span>@nafis_interlux</span>
               </div>
             </div>
-            <img src={contactPhone} alt="..." />
+            <img data-aos="fade-up" src={contactPhone} alt="..." />
+          </div>
+
+          <div className="questions " data-aos="fade-up">
+            <h2>Остались Bопросы?</h2>
+            <span>Оставьте свой номер телефона и мы свяжемся с вами! </span>
+            <form action="">
+              <div>
+                <h2>Ваше имя</h2>
+                <input type="text" name="name" id="name" placeholder="Имя-фамилия" />
+              </div>
+              <div>
+                <h2>номер телефона</h2>
+                <input type="number" name="name" id="name" placeholder="+998 99 663 7000" />
+              </div>
+              <div>
+                <h2>Удобное время для вас</h2>
+                <input type="date" name="name" id="name" placeholder="09:41" />
+              </div>
+            </form>
+            <a href="tel:+998993585110">Позвоните мне</a>
           </div>
         </div>
       </section>
       {/* CONTACT END */}
+    </main>
+
+    <footer id="footer">
+      
+    </footer>
     </>
   )
 }
