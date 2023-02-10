@@ -19,6 +19,7 @@ import Team1 from '../img/team1.png'
 // import ProjectImg6 from '../img/project6.png'
 // import ProjectImg7 from '../img/project7.png'
 // import ProjectImg8 from '../img/project8.png'
+import contactPhone from '../img/contactPhone.png'
 
 export default function Home() {
   return (
@@ -60,7 +61,6 @@ export default function Home() {
         </div>
       </section> 
       {/* HERO SECTION END */}
-
       <section id='whyUs_section'>
         <div className="container">
           <div className='whyUsTitle_content'>
@@ -182,7 +182,6 @@ export default function Home() {
         </div>
       </section>
       {/* OUR PROJECTS SECTION END */}
-
       <section id="ourTeam"> 
         <div className="container">
           <div className='whyUsTitle_content ourTeamTitle'>
@@ -209,7 +208,6 @@ export default function Home() {
         </div>
       </section>
       {/* OUR TEAM END */}
-
       <section id="faq">
         <div className="container">
           <div className='whyUsTitle_content ourTeamTitle'>
@@ -300,6 +298,39 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* FAQ END */}
+      <section id="contact">
+        <div className="container">
+          <div className='whyUsTitle_content contact'>
+            <img data-aos="fade-up" src={PatternIcon} alt="..." />
+            <h2 data-aos="fade-up">Частые Вопросы</h2>
+            <p>Мы всегда рады ответить на все ваши вопросы, для получения более подробной информации, просто свяжитесь с нами по ниже указанным данным.</p>
+          </div>
+
+          <div className="contactContent d-flex justify-content-between align-items-center">
+            <div className="contactInfo">
+              <div className="contactInfoContent">
+                <h3>ТЕЛЕФОН</h3>
+                <span>+998 99 663 7000</span>
+              </div>
+              <div className="contactInfoContent">
+                <h3>АДРЕС</h3>
+                <span>Лайлитугон, 1/6  Ташкент, Чорсу ж/м</span>
+              </div>
+              <div className="contactInfoContent">
+                <h3>EMAIL</h3>
+                <span>nafisinterlux@gmail.com</span>
+              </div>
+              <div className="contactInfoContent">
+                <h3>SOCIAL MEDIA</h3>
+                <span>@nafis_interlux</span>
+              </div>
+            </div>
+            <img src={contactPhone} alt="..." />
+          </div>
+        </div>
+      </section>
+      {/* CONTACT END */}
     </>
   )
 }

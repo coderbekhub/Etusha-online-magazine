@@ -737,3 +737,113 @@ Link {
 .accordion-body {
   color: #F8F6F4;
 }
+
+.contact {
+  p {
+    width: 928px;
+    margin: 0 auto;
+    display: block;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 50px;
+    text-align: center;
+    color: #000;
+    margin-top: 80px;
+    margin-bottom: 120px;
+  }
+}
+
+.contactContent {
+  padding-bottom: 150px;
+  display: block;
+  .contactInfoContent {
+    margin-bottom: 80px;
+    h3 {
+      font-weight: 600;
+      font-size: 26.2044px;
+      line-height: 32px;
+      color: #15594D;
+      opacity: 0.5;
+      margin-bottom: 10px;
+      display: block;
+    }
+    span {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 39px;
+      color: #000;
+      margin-bottom: 80px;
+
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .contactContent {
+    img {
+      width: auto;
+      height: 700px;
+    }
+  }
+}
+
+@media (max-width: 939px) {
+  .contact {
+    p {
+      width: auto;
+      text-align: center;
+      margin-bottom: 70px;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .contact {
+    p {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+  .contactContent {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    img {
+      width: auto;
+      height: 600px;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 70px;
+    }
+  }
+  .contactInfo {
+    .contactInfoContent {
+      margin-bottom: 40px;
+      text-align: center;
+      span {
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 310px) {
+  .contactContent {
+    img {
+      width: auto;
+      height: 400px;
+    }
+  }
+  .contactInfo {
+    .contactInfoContent {
+      margin-bottom: 40px;
+      text-align: center;
+      span {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
