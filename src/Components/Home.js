@@ -308,7 +308,7 @@ export default function Home() {
         <div className="container">
           <div className='whyUsTitle_content contact'>
             <img data-aos="fade-up" src={PatternIcon} alt="..." />
-            <h2 data-aos="fade-up">Частые Вопросы</h2>
+            <h2 data-aos="fade-up">Контакты</h2>
             <p data-aos="fade-up">Мы всегда рады ответить на все ваши вопросы, для получения более подробной информации, просто свяжитесь с нами по ниже указанным данным.</p>
           </div>
 
