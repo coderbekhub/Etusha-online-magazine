@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-cards";
-import { EffectCards } from "swiper";
+import "swiper/css/effect-creative";
+import { EffectCreative } from "swiper";
 import "../styles.css";
 import HeroBgVd from '../img/HeroBgVd.mp4'
 import PatternIcon from '../img/pattern_icon.svg'
@@ -194,21 +194,82 @@ export default function Home() {
             <h2 data-aos="fade-up">Наша Команда</h2>
           </div>
           <div data-aos="fade-up" className="carousel_content">
-            <Swiper
-              effect={"cards"}
-              grabCursor={true}
-              modules={[EffectCards]}
-              className="mySwiper">
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
-            </Swiper>
+          <Swiper
+            grabCursor={true}
+            effect={"creative"}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: ["-120%", 0, -500],
+              },
+              next: {
+                shadow: true,
+                translate: ["120%", 0, -500],
+              },
+            }}
+            modules={[EffectCreative]}
+            className="mySwiper2">
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+          </Swiper>
+          <Swiper
+            grabCursor={true}
+            effect={"creative"}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: ["-120%", 0, -500],
+              },
+              next: {
+                shadow: true,
+                translate: ["120%", 0, -500],
+              },
+            }}
+            modules={[EffectCreative]}
+            className="mySwiper2">
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+          </Swiper>
+          <Swiper
+            grabCursor={true}
+            effect={"creative"}
+            creativeEffect={{
+              prev: {
+                shadow: true,
+                translate: ["-120%", 0, -500],
+              },
+              next: {
+                shadow: true,
+                translate: ["120%", 0, -500],
+              },
+            }}
+            modules={[EffectCreative]}
+            className="mySwiper2">
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+            <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
+          </Swiper>
+          
           </div>
         </div>
       </section>
@@ -392,7 +453,7 @@ export default function Home() {
             <ul data-aos="fade-up" className="footerList contact_info">
               <h2 data-aos="fade-up">Контакты</h2>
               <li><a data-aos="fade-up" href="tel:+998 99 663 70 00">+998 99 663 70 00</a></li>
-              <li><a data-aos="fade-up" href="#">nafisinterlux@gmail.com</a></li>
+              <li><a data-aos="fade-up" href="#">etusha@gmail.com</a></li>
               <li><a data-aos="fade-up" href="#">Наши проекты</a></li>
               <li><a data-aos="fade-up" href="#">Наша команда</a></li>
               <li><a data-aos="fade-up" href="#">Ташкент, Лайлитугон 1/6, Чорсу ж/м</a></li>
