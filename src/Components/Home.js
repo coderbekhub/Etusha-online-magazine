@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCreative } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-creative";
-import { EffectCreative } from "swiper";
 import "../styles.css";
 import HeroBgVd from '../img/HeroBgVd.mp4'
 import PatternIcon from '../img/pattern_icon.svg'
@@ -24,6 +24,7 @@ import Telegram from '../img/telegram.svg'
 import Instagram from '../img/instagram.svg'
 import FaceBook from '../img/facebook.svg'
 import Brand from '../img/brand-removebg.png'
+import ProjectsSlide from "./ProjectsSlide";
 
 export default function Home() {
   return (
@@ -123,69 +124,7 @@ export default function Home() {
           </div>
       </section>
       {/* WHY US SECTION END */}
-      <section id='ourProjects'>
-        <div className="container">
-          <div className='whyUsTitle_content'>
-              <img data-aos="fade-up" src={PatternIcon} alt="..." />
-              <h2 data-aos="fade-up">Наши проекты</h2>
-          </div>
-          <div data-aos="fade-up" id="carouselDarkVariant" className="carousel slide carousel-fade carousel-dark carouselContent" data-mdb-ride="carousel">
-            <div className="carousel-indicators">
-              <button
-                data-mdb-target="#carouselDarkVariant"
-                data-mdb-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-h2="Slide 1"
-                ></button>
-              <button
-                data-mdb-target="#carouselDarkVariant"
-                data-mdb-slide-to="1"
-                aria-h2="Slide 1"
-                ></button>
-              <button
-                data-mdb-target="#carouselDarkVariant"
-                data-mdb-slide-to="2"
-                aria-h2="Slide 1"
-                ></button>
-            </div>
-
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp" className="d-block w-100" alt="Motorbike Smoke"/>
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>First slide h2</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-              </div>
-
-              <div className="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp" className="d-block w-100" alt="Mountaintop"/>
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide h2</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-
-              <div className="carousel-item">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp" className="d-block w-100" alt="Woman Reading a Book"/>
-                <div className="carousel-caption d-none d-md-block">
-                  <h5>Third slide h2</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-              </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="prev">
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-mdb-target="#carouselDarkVariant" data-mdb-slide="next">
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </section>
+      <ProjectsSlide />
       {/* OUR PROJECTS SECTION END */}
       <section id="ourTeam"> 
         <div className="container">

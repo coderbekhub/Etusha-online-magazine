@@ -509,11 +509,12 @@ Link {
   .whyUs_card {
     width: 280px;
     height: 298px;
-    background: #F8F6F4;
+    background: #ffffffb2;
     border-radius: 18px;
     padding: 20px 13px 24px 13px;
     margin-bottom: 50px;
     transform: scale(1);
+    cursor: pointer;
     &:hover {
       transform: scale(1.1);
       transition: all 1s ease;  
