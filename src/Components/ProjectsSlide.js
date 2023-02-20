@@ -5,10 +5,10 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { EffectCreative } from "swiper";
 import PatternIcon from '../img/pattern_icon.svg'
-import "../main.css";
 import ProjectImg1 from '../img/project1.png'
 import ProjectImg2 from '../img/project2.png'
 import ProjectImg3 from '../img/project3.png'
+import "../main.css";
 
 export default function ProjectsSlide() {
   return (
