@@ -346,7 +346,7 @@ export default function Home() {
       </section>
       {/* CONTACT END */}
     </main>
-    {/* MAIN */}
+    {/* MAIN END*/}
     </>
   )
 }
