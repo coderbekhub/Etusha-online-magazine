@@ -5,9 +5,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import OurAbout from './Pages/OurAbout';
 import Contact from './Pages/Contact';
 import OurProjects from './Pages/OurProjects';
-import Sewing from './Pages/Services/Sewing'
-import Hairdresser from './Pages/Services/Hairdresser'
-import ChemicalCleaning from './Pages/Services/ChemicalCleaning'
+import Sewing from './Pages/ourProjects/Sewing'
+import Hairdresser from './Pages/ourProjects/Hairdresser'
+import ChemicalCleaning from './Pages/ourProjects/ChemicalCleaning'
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/hairdresser' element={ <Hairdresser /> } />
           <Route path='/chemicalCleaning' element={ <ChemicalCleaning /> } />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
