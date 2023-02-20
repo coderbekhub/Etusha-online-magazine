@@ -9,11 +9,6 @@ import "../main.css";
 import ProjectImg1 from '../img/project1.png'
 import ProjectImg2 from '../img/project2.png'
 import ProjectImg3 from '../img/project3.png'
-import ProjectImg4 from '../img/project4.png'
-import ProjectImg5 from '../img/project5.png'
-import ProjectImg6 from '../img/project6.png'
-import ProjectImg7 from '../img/project7.png'
-import ProjectImg8 from '../img/project8.png'
 
 export default function ProjectsSlide() {
   return (
@@ -41,14 +36,14 @@ export default function ProjectsSlide() {
               modules={[EffectCreative]}
               className="mySwiper2">
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
             </Swiper>
             <Swiper
               grabCursor={true}
@@ -66,14 +61,14 @@ export default function ProjectsSlide() {
               modules={[EffectCreative]}
               className="mySwiper2">
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
             </Swiper>
             <Swiper
               grabCursor={true}
@@ -91,14 +86,14 @@ export default function ProjectsSlide() {
               modules={[EffectCreative]}
               className="mySwiper2">
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
-              <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
+              <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>
             </Swiper>
           </div>
         </div>
