@@ -12,13 +12,6 @@ import PlanIcon from '../img/plan_icon.svg'
 import StarIcon from '../img/star_icon.svg'
 import StandardsImg from '../img/standardsImg.png'
 import Team1 from '../img/team1.png'
-// import ProjectImg2 from '../img/project2.png'
-// import ProjectImg3 from '../img/project3.png'
-// import ProjectImg4 from '../img/project4.png'
-// import ProjectImg5 from '../img/project5.png'
-// import ProjectImg6 from '../img/project6.png'
-// import ProjectImg7 from '../img/project7.png'
-// import ProjectImg8 from '../img/project8.png'
 import contactPhone from '../img/contactPhone.png'
 import Telegram from '../img/telegram.svg'
 import Instagram from '../img/instagram.svg'
@@ -324,14 +317,14 @@ export default function Home() {
               </div>
               <div data-aos="fade-up" className="contactInfoContent">
                 <h3>EMAIL</h3>
-                <span>nafisinterlux@gmail.com</span>
+                <span>etusha@gmail.com</span>
               </div>
               <div data-aos="fade-up" className="contactInfoContent">
                 <h3>SOCIAL MEDIA</h3>
-                <span>@nafis_interlux</span>
+                <span>@etusha</span>
               </div>
             </div>
-            <img data-aos="fade-up" src={contactPhone} alt="..." />
+            <img className="contactPhone" data-aos="fade-up" src={contactPhone} alt="..." />
           </div>
 
           <div className="questions " data-aos="fade-up">

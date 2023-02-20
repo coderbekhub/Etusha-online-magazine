@@ -580,6 +580,27 @@ Link {
   }
 }
 
+@media (max-width: 330px) {
+  .contactContent {
+    .contactPhone {
+      width: 240px;
+      height: 450px;
+    }
+  }
+
+  .footerNav {
+    .footerList h2{
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+    .footerList li a{
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
 // STANDARDS STYLE
 
 #whyUs_section {
@@ -1011,6 +1032,13 @@ Link {
       line-height: 10px;
       margin: 0 auto;
     }
+  }
+}
+
+@media (max-width: 365px) {
+  .questions a {
+    display: flex;
+    justify-content: center;
   }
 }
 
