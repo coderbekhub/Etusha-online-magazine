@@ -18,7 +18,16 @@ export default function NavBar() {
             </li>
             <li><Link to="/" className="nav_link">Главный</Link></li>
             <li><Link to="/ourAbout" className="nav_link">О нас</Link></li>
-            <li><Link to="/ourProjects" className="nav_link">Наши проекты</Link></li>
+            <li className="nav-item dropdown">
+              <a className="nav-link nav_link mediaLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Наши Проекты
+              </a>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item mediaDropLink" to="/sewing">Шитье</Link></li>
+                <li><Link className="dropdown-item mediaDropLink" to="/hairdresser">Парикмахер</Link></li>
+                <li><Link className="dropdown-item mediaDropLink" to="/chemicalCleaning">Химическая Очистка</Link></li>
+              </ul>
+            </li>
             <li><Link to="/Contact" className="nav_link">Контакты</Link></li>
             <div className="dropdown">
             <button className="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,8 +72,15 @@ export default function NavBar() {
                 <li className="nav-item">
                   <Link className="nav-link mediaLink" to="/ourAbout">О нас</Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link mediaLink" to="/ourProjects">Наши проекты</Link>
+                <li className="nav-item dropdown">
+                  <a className="nav-link mediaLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Наши Проекты
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li><Link className="dropdown-item mediaDropLink" to="/sewing">Шитье</Link></li>
+                    <li><Link className="dropdown-item mediaDropLink" to="/hairdresser">Парикмахер</Link></li>
+                    <li><Link className="dropdown-item mediaDropLink" to="/chemicalCleaning">Химическая Очистка</Link></li>
+                  </ul>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link mediaLink" to="/Contact">Контакты</Link>
