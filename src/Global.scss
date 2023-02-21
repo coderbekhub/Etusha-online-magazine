@@ -28,7 +28,6 @@ Link {
 // NAVIGATION STYLE
 
 .nav_bar {
-  // width: 100%;
   position: relative;
   background-color: #d10683;
 }
@@ -1121,4 +1120,59 @@ Link {
   text-align: center;
   display: block;
   margin: 0 auto;
+}
+
+// SEWING STYLE START
+
+#sewingSection {
+  background: url('./img/cool-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sewingContent {
+  display: flex;
+  justify-content: space-between;
+  padding: 124px 0;
+  img {
+    width: 682px;
+    height: 521px;
+    border-radius: 8px;
+  }
+  .sewingInfo {
+    h2 {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 37px;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+      color: #000;
+      margin-bottom: 40px;
+    }
+
+    .sewingHr {
+      opacity: 0.23;
+      border: 1px solid #000;
+      width: 502px;
+      margin-bottom: 6px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 40px;
+      color: #000;
+      margin-bottom: 6px;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
 }
