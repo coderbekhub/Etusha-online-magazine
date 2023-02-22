@@ -6,20 +6,21 @@ export default function Sewing() {
     <>
       <section id='sewingSection'>
         <div className="container">
-          <div className='sewingContent'>
-            <div className='sewingInfo'>
-              <h2>Lorem, ipsum.</h2>
-              <p>Boulevard — это совершенно новое понимание комфорта и высокого класса недвижимости. Семиэтажный жилой комплекс выполнен в классическом европейском стиле архитектуры.</p>
+          <div data-aos="fade-up" className='sewingContent'>
+            <div data-aos="fade-up" className='sewingInfo'>
+              <h2 data-aos="fade-up">Lorem, ipsum.</h2>
+              <p data-aos="fade-up">Boulevard — это совершенно новое понимание комфорта и высокого класса недвижимости. Семиэтажный жилой комплекс выполнен в классическом европейском стиле архитектуры.</p>
               <hr className='sewingHr' />
-              <h3>кв.м: <span>65 м2</span></h3>
+              <h3 data-aos="fade-up">кв.м: <span>65 м2</span></h3>
               <hr className='sewingHr' />
-              <h3>Тип:<span>Новостройка</span></h3>
+              <h3 data-aos="fade-up">Тип:<span>Новостройка</span></h3>
               <hr className='sewingHr' />
-              <h3>Местонахождение:<span>Ташкент</span></h3>
+              <h3 data-aos="fade-up">Местонахождение:<span>Ташкент</span></h3>
               <hr className='sewingHr' />
-              <h3>Дата Релиза:<span>2022</span></h3>
+              <h3 data-aos="fade-up">Дата Релиза:<span>2022</span></h3>
+              <hr className='sewingHr' />
             </div>
-            <img src={SewingImg} alt="..." />
+            <img data-aos="fade-up" src={SewingImg} alt="..." />
           </div>
         </div>
       </section>

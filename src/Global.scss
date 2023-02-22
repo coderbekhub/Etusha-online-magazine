@@ -1146,7 +1146,7 @@ Link {
       font-weight: 400;
       font-size: 32px;
       line-height: 37px;
-      color: #000;
+      color: #000000b2;
       margin-bottom: 20px;
     }
 
@@ -1173,7 +1173,87 @@ Link {
       margin-bottom: 6px;
       span {
         font-weight: 400;
+        margin-left: 5px;
       }
     }
   }
 }
+
+@media (max-width: 1230px) {
+  .sewingContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column-reverse;
+    img {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
+    .sewingInfo {
+      h2 {
+        color: #fff;
+      }
+      p {
+        width: 510px;
+        color: #fff;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 40px;
+      }
+      h3 {
+        color: #fff;
+        span {
+          color: #f7e4d1;
+        }
+      }
+      .sewingHr {
+        margin: 0 auto;
+        display: block;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  .sewingContent {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .sewingContent {
+    padding: 80px 0;
+    .sewingInfo {
+      h2 {
+        font-size: 25px;
+        line-height: 25px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 25px;
+        width: auto;
+      }
+  
+      .sewingHr {
+        width: auto;
+      }
+
+      h3 {
+        font-size: 18px;
+        line-height: 40px;
+      }
+    }
+  }
+}
+
