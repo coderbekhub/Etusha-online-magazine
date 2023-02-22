@@ -1413,10 +1413,233 @@ Link {
 
 .sewingContent3 {
   margin-top: 80px;
+  p {
+    width: 800px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    margin: 0 auto;
+  }
 
   .sewingImg5 {
     width: 100%;
     height: auto;
+    border-radius: 8px;
     margin-bottom: 80px;
+  }
+
+  .sewingInfo3 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sewingInfo3 img:nth-child(1) {
+    width: 616px;
+    height: 569px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+
+  .sewingInfo3 img:nth-child(2) {
+    width: 566px;
+    height: 688px;
+    border-radius: 8px;
+    margin-top: 145px;
+    margin-bottom: 80px;
+  }
+}
+
+
+@media (max-width:1220px) {
+  .sewingContent3 {
+    margin-top: 80px;
+    .sewingInfo3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .sewingInfo3 img:nth-child(1) {
+      height: 569px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+  
+    .sewingInfo3 img:nth-child(2) {
+      width: 616px;
+      height: 569px;
+      border-radius: 8px;
+      margin-top: 45px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 815px) {
+  .sewingContent3 {
+    margin-top: 80px;
+    p {
+      width: auto;
+    }
+    .sewingInfo3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .sewingInfo3 img:nth-child(1) {
+      height: 569px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+  
+    .sewingInfo3 img:nth-child(2) {
+      width: 616px;
+      height: 569px;
+      border-radius: 8px;
+      margin-top: 45px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .sewingContent3 {
+    margin-top: 80px;
+    p {
+      width: auto;
+    }
+    .sewingInfo3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .sewingInfo3 img:nth-child(1) {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+  
+    .sewingInfo3 img:nth-child(2) {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 45px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.sewingContent4 {
+  margin-top: 80px;
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    width: 765px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+
+  .sewingInfo4 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sewingInfo4 img:nth-child(1) {
+    width: 616px;
+    height: 569px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+
+  .sewingInfo4 img:nth-child(2) {
+    width: 566px;
+    height: 688px;
+    border-radius: 8px;
+    margin-top: 145px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .sewingContent4 {
+    .sewingInfo4 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .sewingInfo4 img:nth-child(1) {
+      width: 616px;
+      height: 569px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+  
+    .sewingInfo4 img:nth-child(2) {
+      width: 616px;
+      height: 569px;
+      border-radius: 8px;
+      margin-top: 45px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .sewingContent4 {
+    p {
+      width: auto;
+    }
+    .sewingInfo4 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .sewingInfo4 img:nth-child(1) {
+      width: 616px;
+      height: 569px;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+  
+    .sewingInfo4 img:nth-child(2) {
+      width: 616px;
+      height: 569px;
+      border-radius: 8px;
+      margin-top: 45px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .sewingContent4 {
+    .sewingInfo4 img:nth-child(1) {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+  
+    .sewingInfo4 img:nth-child(2) {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 45px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .sewingContent4 {
+    p {
+      font-size: 15px;
+      line-height: 30px;
+      margin-top: 40px;
+    }
   }
 }
