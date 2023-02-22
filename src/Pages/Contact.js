@@ -1,4 +1,6 @@
 import React from 'react'
+import PatternIcon from '../img/pattern_icon.svg'
+import contactPhone from '../img/contactPhone.png'
 
 export default function Contact() {
   return (
