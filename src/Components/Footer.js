@@ -22,11 +22,11 @@ export default function Footer() {
 
             <ul data-aos="fade-up" className="footerList">
               <h2 data-aos="fade-up">Главная</h2>
-              <li><a data-aos="fade-up" href="#">Почему мы?</a></li>
-              <li><a data-aos="fade-up" href="#">Цифры</a></li>
-              <li><a data-aos="fade-up" href="#">Наши проекты</a></li>
-              <li><a data-aos="fade-up" href="#">Наша команда</a></li>
-              <li><a data-aos="fade-up" href="#">Контакты</a></li>
+              <li><a data-aos="fade-up" href="#whyUs_section">Почему мы?</a></li>
+              <li><a data-aos="fade-up" href="#faq">Частые Вопросы</a></li>
+              <li><a data-aos="fade-up" href="#ourProjects">Наши проекты</a></li>
+              <li><a data-aos="fade-up" href="#ourTeam">Наша команда</a></li>
+              <li><a data-aos="fade-up" href="#contact">Контакты</a></li>
             </ul>
 
             <ul data-aos="fade-up" className="footerList">
