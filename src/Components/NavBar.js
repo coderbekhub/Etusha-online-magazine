@@ -17,7 +17,7 @@ export default function NavBar() {
               </a>
             </li>
             <li><Link to="/" className="nav_link">Главный</Link></li>
-            <li><Link to="/ourAbout" className="nav_link">О нас</Link></li>
+            <li><Link to="/ourAbout" className="nav_link">Наша команда</Link></li>
             <li className="nav-item dropdown">
               <a className="nav-link nav_link mediaLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Наши Проекты
@@ -70,7 +70,7 @@ export default function NavBar() {
                   <Link className="nav-link mediaLink" aria-current="page" to='/'>Главный</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mediaLink" to="/ourAbout">О нас</Link>
+                  <Link className="nav-link mediaLink" to="/ourAbout">Наша команда</Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link mediaLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
