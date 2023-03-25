@@ -1,0 +1,34 @@
+.swiper {
+  margin: 100px auto;
+  width: 320px;
+  height: 240px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#ourTeam {
+  background: url('./img/cool-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  border-radius: 10px;
+  width: 231px;
+  height: 358px;
+}
+
+.carousel_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
