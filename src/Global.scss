@@ -1652,3 +1652,264 @@ Link {
     }
   }
 }
+
+// OUR TEAM SECTION
+
+#ourTeam1 {
+  background: url('./img/cool-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -16px;
+  padding: 95px 0 100px 0;
+
+  .ourRectangle {
+    width: 60%;
+    height: 9px;
+    text-align: center;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 100px;
+  }
+}
+
+.ourAboutContent {
+  text-align: center;
+ h2 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: #fff;
+  margin-bottom: 24px;
+ }
+
+ p {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 46px;
+  color: #fff;
+  margin-bottom: 100px;
+ }
+}
+
+.aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  img {
+    width: 515px;
+    height: 648px;
+    border-radius: 8px;
+    margin-right: 100px;
+  }
+
+  .aboutInfo {
+    h3 {
+      font-weight: 400;
+      font-size: 64px;
+      line-height: 75px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 40px;
+      color: #fff;
+      margin-bottom: 53px;
+      display: block;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 40px;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    img {
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
+
+    .aboutInfo {
+      h3 {
+        width: auto;
+        text-align: center;
+      }
+      span {
+        width: auto;
+        text-align: center;
+        margin-bottom: 33px;
+      }
+      p {
+        width: auto;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #ourTeam1 {
+    .ourRectangle {
+      width: 60%;
+      height: 9px;
+      text-align: center;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 70px;
+    }
+  }
+  .ourAboutContent {
+    h2 {
+      font-size: 54px;
+      line-height: 55px;
+    }
+    P {
+      font-size: 20px;
+      line-height: 40px;
+      margin-bottom: 50px;
+    }
+  }
+
+  #ourTeam1 {
+    .aboutContent {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .aboutContent {
+    .aboutInfo {
+      h3 {
+        font-size: 54px;
+        line-height: 55px;
+      }
+      span {
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      p {
+        font-size: 19px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .ourAboutContent {
+    p {
+      width: auto;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 50px;
+    }
+  }
+
+  .aboutContent {
+    .aboutInfo {
+      h3 {
+        width: auto;
+        font-size: 44px;
+        line-height: 45px;
+        margin-bottom: 15px;
+      }
+      span {
+        width: auto;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 23px;
+      }
+
+      p {
+        width: auto;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  #ourTeam1 {
+    margin-top: -16px;
+    padding: 50px 0 50px 0;
+  }
+  .ourAboutContent {
+    h2 {
+      font-size: 44px;
+      line-height: 55px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .aboutContent {
+    img {
+      margin-bottom: 15px;
+    }
+    .aboutInfo {
+      h3 {
+        width: auto;
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 10px;
+      }
+      span {
+        width: auto;
+        font-size: 15px;
+        line-height: 15px;
+      }
+
+      p {
+        width: auto;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+
+}
+
+.rowReverse {
+  // display: flex;
+  flex-direction: row-reverse;
+  .rowReverseContent {
+    margin-right: 100px;
+  }
+
+}
+
+@media (max-width: 1150px) {
+  .rowReverse {
+    flex-direction: column;
+    .rowReverseContent {
+      margin-right: 0px;
+    }
+  }
+
+}
