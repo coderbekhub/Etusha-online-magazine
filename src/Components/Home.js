@@ -15,7 +15,7 @@ import Team1 from '../img/team1.png'
 import contactPhone from '../img/contactPhone.png'
 import ProjectsSlide from "./ProjectsSlide";
 
-export default function Home() {
+export default function Home() {    
   return (
     <>
     <main>
