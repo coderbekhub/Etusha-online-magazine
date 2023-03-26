@@ -1,11 +1,29 @@
 import React from 'react'
 import Brand from '../img/brand-removebg.png'
 import Globus from '../img/globus.png'
-import Uz from '../img/uz.png'
-import Ru from '../img/ru.png'
+// import Uz from '../img/uz.png'
+// import Ru from '../img/ru.png'
 import { Link } from 'react-router-dom'
 
 export default function NavBar() {
+
+  // const language = [
+  //   {
+  //     code: 'uz',
+  //     name: 'O‘zbek',
+  //     country_code: 'uz'
+  //   },
+  //   {
+  //     code: 'ru',
+  //     name: 'Русский',
+  //     country_code: 'ru'
+  //   },
+  //   {
+  //     code: 'en',
+  //     name: 'English',
+  //     country_code: 'gb'
+  //   }
+  // ]
   return (
     <>
       <nav id='navBar' className='nav_bar'>
@@ -33,19 +51,15 @@ export default function NavBar() {
             <button className="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <img src={Globus} alt="..." width={20} height={20} />
             </button>
-            <ul className="dropdown-menu">
-              <li>
-                <a className="dropdown-item nav_lang" href="#">
-                  <img src={Uz} alt="..."/> 
-                  O'zbek
-                </a></li>
-              <li>
-                <a className="dropdown-item nav_lang" href="#">
-                  <img src={Ru} alt="..."/> 
-                  Русский
-                </a>
-              </li>
-            </ul>
+            {/* <ul className="dropdown-menu">
+              {language.map(({code, name1, countryCode}) => (
+                <li key={countryCode}>
+                  <button className='dropdown-item'>
+                    {name1}
+                  </button>
+                </li>
+              ))}
+            </ul> */}
           </div>
           </ul>
         </div>
