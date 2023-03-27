@@ -14,8 +14,11 @@ import StandardsImg from '../img/standardsImg.png'
 import Team1 from '../img/team1.png'
 import contactPhone from '../img/contactPhone.png'
 import ProjectsSlide from "./ProjectsSlide";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {    
+  const {t} = useTranslation()
+
   return (
     <>
     <main>
@@ -26,7 +29,7 @@ export default function Home() {
         </div>
         <div className="container">
           <div className='heroContent'>
-            <h2 className='hero_title'> Функция, Комфорт, Элегантность. </h2>
+            <h2 className='hero_title'> {t("HeroTitle")} </h2>
             <div className='heroInfo'>
               <h3 className='heroInfo_title'>Подать Заявку</h3>
               <form className="was-validated heroForm">

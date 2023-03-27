@@ -4,6 +4,7 @@ import Globus from '../img/globus.png'
 // import Uz from '../img/uz.png'
 // import Ru from '../img/ru.png'
 import { Link } from 'react-router-dom'
+import i18next from 'i18next'
 
 export default function NavBar() {
 
@@ -54,7 +55,9 @@ export default function NavBar() {
             <ul className="dropdown-menu">
               {language.map(({code, name1, countryCode}) => (
                 <li key={countryCode}>
-                  <button className='dropdown-item'>
+                  <button className='dropdown-item' 
+                    onClick={() => i18next.changeLanguage(code)}
+                  >
                     <span className={`flag-icons flag-icons-${countryCode}`}></span>&nbsp;
                     {/* <span className='fi fi-uz'></span>&nbsp; */}
                     {name1}
