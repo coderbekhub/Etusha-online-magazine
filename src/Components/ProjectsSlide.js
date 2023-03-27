@@ -84,7 +84,7 @@ export default function ProjectsSlide() {
                 },
               }}
               modules={[EffectCreative]}
-              className="mySwiper2">
+              className="mySwiper2 mySwiper3">
               <SwiperSlide><img src={ProjectImg1} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={ProjectImg2} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={ProjectImg3} alt="..." /></SwiperSlide>

@@ -9,8 +9,10 @@ import Sewing from './Pages/ourProjects/Sewing'
 import Hairdresser from './Pages/ourProjects/Hairdresser'
 import ChemicalCleaning from './Pages/ourProjects/ChemicalCleaning'
 import Footer from './Components/Footer';
+// import { useTransition } from 'react-i18next';
 
 function App() {
+  // const {t} = useTransition()
   return (
     <BrowserRouter >
       <div className='App'>

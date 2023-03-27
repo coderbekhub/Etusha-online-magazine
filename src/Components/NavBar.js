@@ -7,23 +7,23 @@ import { Link } from 'react-router-dom'
 
 export default function NavBar() {
 
-  // const language = [
-  //   {
-  //     code: 'uz',
-  //     name: 'O‘zbek',
-  //     country_code: 'uz'
-  //   },
-  //   {
-  //     code: 'ru',
-  //     name: 'Русский',
-  //     country_code: 'ru'
-  //   },
-  //   {
-  //     code: 'en',
-  //     name: 'English',
-  //     country_code: 'gb'
-  //   }
-  // ]
+  const language = [
+    {
+      code: 'uz',
+      name1: 'O‘zbek',
+      countryCode: 'uz'
+    },
+    {
+      code: 'ru',
+      name1: 'Русский',
+      countryCode: 'ru'
+    },
+    {
+      code: 'en',
+      name1: 'English',
+      countryCode: 'us'
+    }
+  ]
   return (
     <>
       <nav id='navBar' className='nav_bar'>
@@ -51,15 +51,17 @@ export default function NavBar() {
             <button className="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <img src={Globus} alt="..." width={20} height={20} />
             </button>
-            {/* <ul className="dropdown-menu">
+            <ul className="dropdown-menu">
               {language.map(({code, name1, countryCode}) => (
                 <li key={countryCode}>
                   <button className='dropdown-item'>
+                    <span className={`flag-icons flag-icons-${countryCode}`}></span>&nbsp;
+                    {/* <span className='fi fi-uz'></span>&nbsp; */}
                     {name1}
                   </button>
                 </li>
               ))}
-            </ul> */}
+            </ul>
           </div>
           </ul>
         </div>

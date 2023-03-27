@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <div className="container">
           <div className='heroContent'>
-            <h2 className='hero_title'>Функция, Комфорт, Элегантность.</h2>
+            <h2 className='hero_title'> Функция, Комфорт, Элегантность. </h2>
             <div className='heroInfo'>
               <h3 className='heroInfo_title'>Подать Заявку</h3>
               <form className="was-validated heroForm">
@@ -188,7 +188,7 @@ export default function Home() {
                 },
               }}
               modules={[EffectCreative]}
-              className="mySwiper2">
+              className="mySwiper2 mySwiper3">
               <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
               <SwiperSlide><img src={Team1} alt="..." /></SwiperSlide>
@@ -328,7 +328,7 @@ export default function Home() {
             <div className="questions " data-aos="fade-up">
               <h2>Остались Bопросы?</h2>
               <span>Оставьте свой номер телефона и мы свяжемся с вами! </span>
-              <form action="">
+              <form>
                 <div>
                   <h2>Ваше имя</h2>
                   <input type="text" name="name" id="name" placeholder="Имя-фамилия" />
@@ -339,10 +339,12 @@ export default function Home() {
                 </div>
                 <div>
                   <h2>Удобное время для вас</h2>
-                  <input type="date" name="name" id="name" placeholder="09:41" />
+                  <input type="datetime-local" id="meeting-time" name="meeting-time" value="2023-03-23T20:30" min="2018-06-07T00:00" max="2018-06-14T00:00"/>
                 </div>
               </form>
-              <a href="tel:+998993585110">Позвоните мне</a>
+                <div>
+                  <a href="tel:+998993585110">Позвоните мне</a>
+                </div>
             </div>
           </div>
         </section>

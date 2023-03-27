@@ -459,6 +459,24 @@ Link {
   }
 }
 
+@media (max-width: 281px) {
+  .heroInfo {
+    width: 100%;
+
+    .heroForm input {
+      width: 100%;
+    }
+
+    .heroForm .form-select {
+      width: 100%;
+    }
+
+    .heroForm .form-control {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: 590px) {
   .heroContent {
     display: none;
@@ -922,7 +940,7 @@ Link {
     align-items: center;
     margin: 0 auto;
     margin-bottom: 60px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
 
   form div {
@@ -982,11 +1000,38 @@ Link {
   }
 }
 
+@media (max-width: 1200px) {
+  .questions {
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: 695px) {
+  // .questions {
+  //   h2 {
+  //     font-weight: 400;
+  //     font-size: 24px;
+  //     line-height: 75px;
+  //     color: #F8F6F4;
+  //     text-align: center;
+  //     display: block;
+  //     margin-bottom: 10px;
+  //   }
+  // }
+}
+
 @media (max-width: 738px) {
   .questions {
     h2 {
       width: auto;
-      font-size: 50px;
+      font-size: 40px;
       line-height: 50px;
       margin-bottom: 15px;
     }
@@ -997,12 +1042,12 @@ Link {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 590px) {
   .questions {
     h2 {
       width: auto;
-      font-size: 40px;
-      line-height: 50px;
+      font-size: 30px;
+      line-height: 30px;
       margin-bottom: 15px;
     }
     span {
@@ -1012,6 +1057,32 @@ Link {
 
     a {
       width: auto;
+    }
+  }
+}
+
+@media (max-width: 486px) {
+  .questions {
+    h2 {
+      font-weight: bold;
+      width: auto;
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .questions {
+    h2 {
+      font-weight: bold;
+      width: auto;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    span {
+      font-size: 15px;
     }
   }
 }
@@ -1058,6 +1129,14 @@ Link {
     }
   }
 }
+
+// @media (max-width: 365px) {
+//   .questions {
+//     a {
+
+//     }
+//   }
+// }
 
 // CONTACT STYLE END
 
@@ -1896,7 +1975,6 @@ Link {
 }
 
 .rowReverse {
-  // display: flex;
   flex-direction: row-reverse;
   .rowReverseContent {
     margin-right: 100px;
