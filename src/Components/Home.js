@@ -31,7 +31,7 @@ export default function Home() {
           <div className='heroContent'>
             <h2 className='hero_title'> {t("HeroTitle")} </h2>
             <div className='heroInfo'>
-              <h3 className='heroInfo_title'>Подать Заявку</h3>
+              <h3 className='heroInfo_title'>{t('Habaringiz')}</h3>
               <form className="was-validated heroForm">
                 <div className="">
                   <input type="text" className="form-control is-valid" id="validationServer01" required placeholder='Введите ваше имя' />

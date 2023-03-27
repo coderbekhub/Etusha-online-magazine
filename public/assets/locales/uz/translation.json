@@ -1,3 +1,19 @@
 {
-    "HeroTitle": "Funktsiya, qulaylik, nafislik."
+    "Home": "Asosiy",
+    "OurTeam": "Bizning Jamoamiz",
+    "OurProjects": "Bizning Loyihalarimiz",
+    "Sewing": "Tikuvchilik",
+    "Hairdresser": "Sartarosh",
+    "ChemicalCleaning": "Kimyoviy tozalash",
+    "Contact": "Kontaktlar",
+    "Services": "Xizmatlar",
+    "SiteSearch": "Saytdan qidirish",
+    "Search": "QIDIRISH",
+    "ArizaniYuborish": "Arizani Qoldiring",
+    "FormName": "Ismingizni kiriting",
+    "FormNum": "Telefon raqamingiz",
+    "XizmatTuri": "Xizmat turini tanlang",
+    "Habaringiz": "Xabaringizni Qoldiring",
+    "Send": "Yuborish",
+    "HeroTitle": "Funksiya, qulaylik, nafislik."
 }

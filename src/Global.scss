@@ -68,6 +68,10 @@ Link {
 
 // NAVOGATION MEDIA 
 
+@media (max-width: 950px) {
+  
+}
+
 @media (max-width: 830px) {
   .navbarBrand {
     display: inline-block;
@@ -156,7 +160,7 @@ Link {
   .heroInfo_title {
     font-weight: 500;
     font-size: 32px;
-    line-height: 39px;
+    line-height: 30px;
     color: #15594D;
     text-align: center;
     margin-bottom: 24px;
@@ -273,7 +277,7 @@ Link {
     .heroInfo_title {
       font-weight: 500;
       font-size: 25px;
-      line-height: 10px;
+      line-height: 25px;
       margin-bottom: 22px;
       color: #000000b2;
     }
@@ -313,6 +317,7 @@ Link {
     justify-content: center;
   
     .hero_title {
+      z-index: 1000;
       margin-right: -80px;
       margin-left: 50px;
     }
@@ -320,7 +325,7 @@ Link {
 
   .heroInfo {
     width: 320px;
-    height: 370px;
+    height: 400px;
     padding: 22px;
     .heroForm {
       input {
@@ -361,7 +366,7 @@ Link {
       text-align: center;
       margin: 0 auto;
       width: 320px;
-      height: 300px;
+      height: 350px;
       padding: 20px;
       .heroForm {
         input {
