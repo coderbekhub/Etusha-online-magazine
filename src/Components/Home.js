@@ -65,53 +65,53 @@ export default function Home() {
           <div className="container">
             <div className='whyUsTitle_content'>
               <img data-aos="fade-up" src={PatternIcon} alt="..." />
-              <h2 data-aos="fade-up">Почему мы?</h2>
+              <h2 data-aos="fade-up">{t('NegaBiz')}</h2>
             </div>
             <div className='whyUs_content'>
               <div data-aos="fade-up" className='whyUs_card'>
                 <img src={ConfirmationIcon} alt="..." />
-                <h3>Квалифицированные специалисты</h3>
-                <p>Принято считать, что специалисты стоят дорого, но если посчитать все издержки, возникшие от горе-мастеров, то в итоге выходит дешевле</p>
+                <h3>{t('MutaxasislarTitle')}</h3>
+                <p>{t('MutaxasislarText')}</p>
               </div>
               <div data-aos="fade-up" className='whyUs_card'>
                 <img src={SxemaIcon} alt="..." />
-                <h3>Точный расчет сметы</h3>
-                <p>Профессиональный и точный расчет сметы работ позволит сократить общую сумму расходов на ремонт, в некоторых случаях на 40-60%</p>
+                <h3>{t('MutaxasislarTitle2')}</h3>
+                <p>{t('MutaxasislarText2')}</p>
               </div>
               <div data-aos="fade-up" className='whyUs_card'>
                 <img src={PlanIcon} alt="..." />
-                <h3>Составляем план этапов работы</h3>
-                <p>Это поставляет сократить количество времени, которое заказчик тратит на согласование. Мы снимаем эту головную боль</p>
+                <h3>{t('MutaxasislarTitle3')}</h3>
+                <p>{t('MutaxasislarText3')}</p>
               </div>
               <div data-aos="fade-up" className='whyUs_card'>
                 <img src={StarIcon} alt="..." />
-                <h3>Договор и гарантии </h3>
-                <p>Договор дисциплинирует и дает гарантин обеим сторонам мы несем полную отвественность и даем гарантии качественного исполнения в срок </p>
+                <h3> {t('MutaxasislarTitle4')} </h3>
+                <p>{t('MutaxasislarText4')} </p>
               </div>
             </div>
           </div>
           <div className='standardsContent d-flex justify-content-center align-items-center'>
               <img data-aos="fade-right" src={StandardsImg} alt="..." />
               <div className='standardsInfo'>
-                <h2 data-aos="fade-up">Установливаем высокие стандарты</h2>
+                <h2 data-aos="fade-up">{t('Standartlar')}</h2>
                 <div data-aos="fade-up" className='standardsInfoContent d-flex'>
                   <div className='standardsInfoSec'>
                     <span>15</span>
-                    <h3>Лет опытa в отрасли строительства</h3>
+                    <h3>{t('StandardsTitle')}</h3>
                   </div>
                   <div className='standardsInfoSec'>
                     <span>2</span>
-                    <h3>года Гарантия на ремонтые услуги</h3>
+                    <h3>{t('StandardsTitle2')}</h3>
                   </div>
                 </div>
                 <div data-aos="fade-up" className='standardsInfoContent d-flex'>
                   <div className='standardsInfoSec'>
                     <span>20</span>
-                    <h3>Опытных экспертов</h3>
+                    <h3>{t('StandardsTitle3')}</h3>
                   </div>
                   <div className='standardsInfoSec'>
                     <span>10</span>
-                    <h3>Завершенных проектов</h3>
+                    <h3>{t('StandardsTitle4')}</h3>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function Home() {
           <div className="container">
             <div className='whyUsTitle_content ourTeamTitle'>
               <img data-aos="fade-up" src={PatternIcon} alt="..." />
-              <h2 data-aos="fade-up">Наша Команда</h2>
+              <h2 data-aos="fade-up">{t('OurTeam')}</h2>
             </div>
             <div data-aos="fade-up" className="carousel_content">
             <Swiper
@@ -211,13 +211,13 @@ export default function Home() {
           <div className="container">
             <div className='whyUsTitle_content ourTeamTitle'>
               <img data-aos="fade-up" src={PatternIcon} alt="..." />
-              <h2 data-aos="fade-up">Частые Вопросы</h2>
+              <h2 data-aos="fade-up">{t('TSS')}</h2>
             </div>
             <div data-aos="fade-up"  className="accordion accordion-flush" id="accordionFlushExample">
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingOne">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Сколько стоит дизайн проекта?
+                    {t('acardionTitle')}
                   </button>
                 </h2>
                 <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -227,7 +227,7 @@ export default function Home() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingTwo">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Когда лучше заказать проект? 
+                  {t('acardionTitle2')}
                   </button>
                 </h2>
                 <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -237,7 +237,7 @@ export default function Home() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingThree">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Можно делать ремонт параллельно с разработкой дизайн-проекта?
+                  {t('acardionTitle3')}
                   </button>
                 </h2>
                 <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -247,7 +247,7 @@ export default function Home() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingThree">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                    Я не представляю какой стиль хочу получить, как быть в таком случае?
+                  {t('acardionTitle4')}
                   </button>
                 </h2>
                 <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -257,7 +257,7 @@ export default function Home() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingFive">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                    Сколько правок я могу внести?
+                    {t('acardionTitle5')}
                   </button>
                 </h2>
                 <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -267,7 +267,7 @@ export default function Home() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingSix">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                    Из чего состоит дизайн-проект? В каком виде я его получу?
+                    {t('acardionTitle6')}
                   </button>
                 </h2>
                 <div id="flush-collapseSix" className="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
@@ -277,7 +277,7 @@ export default function Home() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingSeven">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                    Рабочие чертежи входят в стоимость дизайн-проекта?
+                  {t('acardionTitle7')}
                   </button>
                 </h2>
                 <div id="flush-collapseSeven" className="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
@@ -287,7 +287,7 @@ export default function Home() {
               <div className="accordion-item">
                 <h2 className="accordion-header" id="flush-headingeight">
                   <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseeight">
-                    Сколько по времени вы делаете дизайн-проект?
+                  {t('acardionTitle8')}
                   </button>
                 </h2>
                 <div id="flush-collapseeight" className="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
@@ -302,26 +302,26 @@ export default function Home() {
           <div className="container">
             <div className='whyUsTitle_content contact'>
               <img data-aos="fade-up" src={PatternIcon} alt="..." />
-              <h2 data-aos="fade-up">Контакты</h2>
-              <p data-aos="fade-up">Мы всегда рады ответить на все ваши вопросы, для получения более подробной информации, просто свяжитесь с нами по ниже указанным данным.</p>
+              <h2 data-aos="fade-up">{t('Contact')}</h2>
+              <p data-aos="fade-up">{t('contactText')}</p>
             </div>
 
             <div className="contactContent d-flex justify-content-between align-items-center">
               <div className="contactInfo">
                 <div data-aos="fade-up" className="contactInfoContent">
-                  <h3>ТЕЛЕФОН</h3>
+                  <h3>{t('contactNumber')}</h3>
                   <span>+998 99 663 7000</span>
                 </div>
                 <div data-aos="fade-up" className="contactInfoContent">
-                  <h3>АДРЕС</h3>
-                  <span>Лайлитугон, 1/6  Ташкент, Чорсу ж/м</span>
+                  <h3>{t('contactAdress')}</h3>
+                  <span>{t('contactAdressText')}</span>
                 </div>
                 <div data-aos="fade-up" className="contactInfoContent">
-                  <h3>EMAIL</h3>
+                  <h3>{t('contactEmail')}</h3>
                   <span>etusha@gmail.com</span>
                 </div>
                 <div data-aos="fade-up" className="contactInfoContent">
-                  <h3>SOCIAL MEDIA</h3>
+                  <h3>{t('contactSocial')}</h3>
                   <span>@etusha</span>
                 </div>
               </div>
@@ -329,24 +329,24 @@ export default function Home() {
             </div>
 
             <div className="questions " data-aos="fade-up">
-              <h2>Остались Bопросы?</h2>
-              <span>Оставьте свой номер телефона и мы свяжемся с вами! </span>
+              <h2>{t('contatSavolText')}</h2>
+              <span>{t('telRaqamingizniQoldiring')} </span>
               <form>
                 <div>
-                  <h2>Ваше имя</h2>
+                  <h2>{t('contactName')}</h2>
                   <input type="text" name="name" id="name" placeholder="Имя-фамилия" />
                 </div>
                 <div>
-                  <h2>номер телефона</h2>
+                  <h2>{t('contactPhoneNumber')}</h2>
                   <input type="number" name="name" id="name" placeholder="+998 99 663 7000" />
                 </div>
                 <div>
-                  <h2>Удобное время для вас</h2>
+                  <h2>{t('contactQulayVaqt')}</h2>
                   <input type="datetime-local" id="meeting-time" name="meeting-time" value="2023-03-23T20:30" min="2018-06-07T00:00" max="2018-06-14T00:00"/>
                 </div>
               </form>
                 <div>
-                  <a href="tel:+998993585110">Позвоните мне</a>
+                  <a href="tel:+998993585110">{t('contactCallMe')}</a>
                 </div>
             </div>
           </div>

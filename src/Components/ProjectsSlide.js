@@ -9,15 +9,17 @@ import ProjectImg1 from '../img/project1.png'
 import ProjectImg2 from '../img/project2.png'
 import ProjectImg3 from '../img/project3.png'
 import "../main.css";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectsSlide() {
+  const {t} = useTranslation()
   return (
     <>
       <section id='ourProjects'>
         <div className="container">
           <div className='whyUsTitle_content'>
             <img data-aos="fade-up" src={PatternIcon} alt="..." />
-            <h2 data-aos="fade-up">Наши проекты</h2>
+            <h2 data-aos="fade-up">{t('OurProjects')}</h2>
           </div>
           <div data-aos="fade-up" className="carousel_content">
             <Swiper
