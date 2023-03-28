@@ -334,7 +334,7 @@ export default function Home() {
               <form>
                 <div>
                   <h2>{t('contactName')}</h2>
-                  <input type="text" name="name" id="name" placeholder="Имя-фамилия" />
+                  <input type="text" name="name" id="name" placeholder={t('IsmFamiliya')} />
                 </div>
                 <div>
                   <h2>{t('contactPhoneNumber')}</h2>
