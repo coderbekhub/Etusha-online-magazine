@@ -23,6 +23,11 @@ export default function NavBar() {
       code: 'en',
       name1: 'English',
       countryCode: 'us'
+    },
+    {
+      code: 'kr',
+      name1: 'Кирилл',
+      countryCode: 'kr'
     }
   ]
   return (
