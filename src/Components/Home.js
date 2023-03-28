@@ -34,24 +34,24 @@ export default function Home() {
               <h3 className='heroInfo_title'>{t('Habaringiz')}</h3>
               <form className="was-validated heroForm">
                 <div className="">
-                  <input type="text" className="form-control is-valid" id="validationServer01" required placeholder='Введите ваше имя' />
+                  <input type="text" className="form-control is-valid" id="validationServer01" required placeholder={t('FormName')} />
                 </div>
                 <div>
-                  <input type="number" className="form-control is-valid" id="validationServer01" required placeholder='Ваш номер телефона' />
+                  <input type="number" className="form-control is-valid" id="validationServer01" required placeholder={t('FormNum')} />
                 </div>
                 <div className="mb-3">
                   <select className="form-select" required aria-h2="select example">
-                    <option value="">Выберите вид услуги</option>
-                    <option value="1">Шитье</option>
-                    <option value="2">Парикмахер</option>
-                    <option value="3">Химическая Очистка</option>
+                    <option value="">{t('XizmatTuri')}</option>
+                    <option value="1">{t('Sewing')}</option>
+                    <option value="2">{t('Hairdresser')}</option>
+                    <option value="3">{t('ChemicalCleaning')}</option>
                   </select>
                 </div>
                 <div className="mb-3">
-                  <textarea className="form-control" id="validationTextarea" placeholder="Оставьте свое сообщение" required></textarea>
+                  <textarea className="form-control" id="validationTextarea" placeholder={t('Habaringiz')} required></textarea>
                 </div>
                 <div>
-                  <button className="btn bg-success heroFormSubmit" type="submit">Отправить</button>
+                  <button className="btn bg-success heroFormSubmit" type="submit">{t('Send')}</button>
                 </div>
               </form>
             </div>

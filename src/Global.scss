@@ -69,10 +69,6 @@ Link {
 // NAVOGATION MEDIA 
 
 @media (max-width: 950px) {
-  
-}
-
-@media (max-width: 830px) {
   .navbarBrand {
     display: inline-block;
   }
@@ -93,7 +89,6 @@ Link {
   .media_list {
     background-color: #d10683;
   }
-
   .mediaTitle {
     color: aliceblue;
   }
@@ -117,7 +112,6 @@ Link {
     font-size: 18px;
     line-height: 20px;
   }
-
 }
 
 // HERO SECTION
@@ -150,7 +144,7 @@ Link {
 
 .heroInfo {
   width: 470px;
-  height: 500px;
+  height: 400px;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #fff;
   backdrop-filter: blur(5px);
@@ -225,7 +219,7 @@ Link {
     border: 1px solid #fff;
     backdrop-filter: blur(5px);
     border-radius: 16px;
-    padding: 32px 32px 32px 32px;
+    padding: 32px;
     .heroForm {
       input {
         width: 306px;
@@ -262,7 +256,7 @@ Link {
 @media (max-width: 950px) {
   .heroContent {
     position: absolute;
-    top: 185px;
+    top: 125px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,7 +305,7 @@ Link {
 @media (max-width: 860px) {
   .heroContent {
     position: absolute;
-    top: 185px;
+    top: 115px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,7 +346,7 @@ Link {
   .heroContent {
     width: auto;
     position: absolute;
-    top: 120px;
+    top: 100px;
   
     .hero_title {
       width: 300px;
@@ -394,7 +388,7 @@ Link {
 
 @media (max-width: 660px) {
   .heroContent {
-    top: 90px;
+    margin-top: 40px;
     .heroInfo {
       width: 100%;
       height: 300px;
