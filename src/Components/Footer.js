@@ -3,8 +3,10 @@ import Telegram from '../img/telegram.svg'
 import Instagram from '../img/instagram.svg'
 import FaceBook from '../img/facebook.svg'
 import Brand from '../img/brand-removebg.png'
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
+  const {t} = useTranslation()
   return (
     <>
       <footer id="footer">
@@ -21,33 +23,33 @@ export default function Footer() {
             </div>
 
             <ul data-aos="fade-up" className="footerList">
-              <h2 data-aos="fade-up">Главная</h2>
-              <li><a data-aos="fade-up" href="#whyUs_section">Почему мы?</a></li>
-              <li><a data-aos="fade-up" href="#faq">Частые Вопросы</a></li>
-              <li><a data-aos="fade-up" href="#ourProjects">Наши проекты</a></li>
-              <li><a data-aos="fade-up" href="#ourTeam">Наша команда</a></li>
-              <li><a data-aos="fade-up" href="#contact">Контакты</a></li>
+              <h2 data-aos="fade-up">{t('Home')}</h2>
+              <li><a data-aos="fade-up" href="#whyUs_section">{t('NegaBiz')}</a></li>
+              <li><a data-aos="fade-up" href="#faq">{t('TSS')}</a></li>
+              <li><a data-aos="fade-up" href="#ourProjects">{t('OurProjects')}</a></li>
+              <li><a data-aos="fade-up" href="#ourTeam">{t('OurTeam')}</a></li>
+              <li><a data-aos="fade-up" href="#contact">{t('Contact')}</a></li>
             </ul>
 
             <ul data-aos="fade-up" className="footerList">
-              <h2 data-aos="fade-up">Наши проекты</h2>
+              <h2 data-aos="fade-up">{t('OurProjects')}</h2>
               <li><a data-aos="fade-up" href="#">ЖК Boulevard</a></li>
               <li><a data-aos="fade-up" href="#">ЗД “Oq Tosh”</a></li>
               <li><a data-aos="fade-up" href="#">ЖК Zenith</a></li>
-              <li><a data-aos="fade-up" href="#">Наша команда</a></li>
+              <li><a data-aos="fade-up" href="#">{t('OurTeam')}</a></li>
               <li><a data-aos="fade-up" href="#">ЖК Darkhan</a></li>
             </ul>
 
             <ul data-aos="fade-up" className="footerList contact_info">
-              <h2 data-aos="fade-up">Контакты</h2>
+              <h2 data-aos="fade-up">{t('Contact')}</h2>
               <li><a data-aos="fade-up" href="tel:+998 99 663 70 00">+998 99 663 70 00</a></li>
               <li><a data-aos="fade-up" href="#">etusha@gmail.com</a></li>
-              <li><a data-aos="fade-up" href="#">Наши проекты</a></li>
-              <li><a data-aos="fade-up" href="#">Наша команда</a></li>
-              <li><a data-aos="fade-up" href="#">Ташкент, Лайлитугон 1/6, Чорсу ж/м</a></li>
+              <li><a data-aos="fade-up" href="#">{t('OurProjects')}</a></li>
+              <li><a data-aos="fade-up" href="#">{t('OurTeam')}</a></li>
+              <li><a data-aos="fade-up" href="#">{t('contactAdressText')}</a></li>
             </ul>
           </nav>
-          <h2 className="copyright">Copyright © 2023 Etusha. All rights reserved.</h2>
+          <h2 className="copyright">{t('Copyright')}</h2>
         </div>
       </section>
     </footer>
