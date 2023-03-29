@@ -86,6 +86,23 @@ export default function NavBar() {
           <div className="media_list offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div className="offcanvas-header">
               <h5 className="offcanvas-title mediaTitle" id="offcanvasNavbarLabel">ETUSHA</h5>
+              <div className="dropdown" id='dropDown'>
+                <button className="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src={Globus} alt="..." width={20} height={20} />
+                </button>
+                <ul className="dropdown-menu">
+                  {language.map(({code, name1, countryCode}) => (
+                    <li key={countryCode}>
+                      <button className='dropdown-item' 
+                        onClick={() => i18next.changeLanguage(code)}
+                      >
+                        <span className={`flag-icons flag-icons-${countryCode}`}></span>&nbsp;
+                        {name1}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
               <button type="button" className="btn-close mediaClose" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div className="offcanvas-body">
