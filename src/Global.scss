@@ -144,7 +144,6 @@ Link {
 
 .heroInfo {
   width: 470px;
-  // height: 450px;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #fff;
   backdrop-filter: blur(5px);
@@ -491,13 +490,6 @@ Link {
   top: -30px;
 }
 
-// #mainBgImg {
-//   background: url('./img/cool-background.png');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-// }
-
 // WHY US STYLE
 #ourProjects {
   background: url('./img/cool-background.png');
@@ -586,10 +578,20 @@ Link {
   }
 }
 
+@media (max-width: 500px) {
+  .whyUsTitle_content {
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+}
+
+
 @media (max-width: 400px) {
   .whyUsTitle_content {
     h2 {
-      font-size: 40px;
+      font-size: 30px;
       line-height: 40px;
     }
   }
@@ -1012,20 +1014,6 @@ Link {
   }
 }
 
-@media (max-width: 695px) {
-  // .questions {
-  //   h2 {
-  //     font-weight: 400;
-  //     font-size: 24px;
-  //     line-height: 75px;
-  //     color: #F8F6F4;
-  //     text-align: center;
-  //     display: block;
-  //     margin-bottom: 10px;
-  //   }
-  // }
-}
-
 @media (max-width: 738px) {
   .questions {
     h2 {
@@ -1128,17 +1116,6 @@ Link {
     }
   }
 }
-
-// @media (max-width: 365px) {
-//   .questions {
-//     a {
-
-//     }
-//   }
-// }
-
-// CONTACT STYLE END
-
 
 #footerSection {
   background: #fe6ec7;
@@ -1988,5 +1965,4 @@ Link {
       margin-right: 0px;
     }
   }
-
 }

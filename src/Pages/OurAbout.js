@@ -2,7 +2,7 @@ import React from 'react'
 import aboutImg1 from '../img/aboutImg1.png'
 import { useTranslation } from 'react-i18next';
     
-export default function ourAbout() {
+export default function OurAbout() {
   const { t } = useTranslation();
   return (
     <>
